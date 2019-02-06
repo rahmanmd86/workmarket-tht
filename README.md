@@ -14,9 +14,8 @@ workmarket-tht/
                 |-- BasePage.java
                 |-- LandingPage.java
                 |-- RegistrationLandingPage.java
-    |-- test/
          |
-         |-- main/java/com/workmarket/test/qe
+         |-- test/java/com/workmarket/test/qe
                 |
                 |-- TestBase.java
                 |-- LandingPageTest.java
