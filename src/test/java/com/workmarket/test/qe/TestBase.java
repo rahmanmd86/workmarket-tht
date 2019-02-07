@@ -1,9 +1,7 @@
 package com.workmarket.test.qe;
 
 import java.util.concurrent.TimeUnit;
-
 import com.github.javafaker.Faker;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -48,9 +46,22 @@ public class TestBase {
         return new RegistrationLandingPage(driver);
     }
 
+    public LoginPage loginPage() {
+        return new LoginPage(driver);
+    }
+
+    public HomePage homePage() {
+        return new HomePage(driver);
+    }
+
+    public SearchPageContainer searchPage() {
+        return new SearchPageContainer(driver);
+    }
+
     @After
     public void teardown() {
         if (driver != null) {
+            driver.manage().deleteAllCookies();
             driver.quit();
         }
     }

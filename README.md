@@ -14,11 +14,16 @@ workmarket-tht/
                 |-- BasePage.java
                 |-- LandingPage.java
                 |-- RegistrationLandingPage.java
+                |-- LoginPage.java
+                |-- HomePage.java
+                |-- SearchPageContainer.java
+    |-- test/
          |
          |-- test/java/com/workmarket/test/qe
                 |
                 |-- TestBase.java
                 |-- LandingPageTest.java
+                |-- HomePageTest.java
     |
     |-- target/ (ignored)
     |-- .gitignore
@@ -43,10 +48,20 @@ Other dependencies are in the `pom.xml` file, such as selenium, junit, etc.
 ```
 mvn clean install -DskipTests
 ```
-* Run tests
+* Run all tests
 ```
 mvn test
 ```
+
+* Run all tests
+```
+mvn test
+```
+* Run specfic tests in a class
+```
+mvn -Dtest=HomePageTest test
+```
+
 * Run tests to generate surefire report
 ```
 mvn clean install test surefire-report:report
