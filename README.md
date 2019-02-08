@@ -52,11 +52,6 @@ mvn clean install -DskipTests
 ```
 mvn test
 ```
-
-* Run all tests
-```
-mvn test
-```
 * Run specfic tests in a class
 ```
 mvn -Dtest=HomePageTest test
